@@ -1,6 +1,6 @@
 import java.util.*;
 public class romanToInteger {
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
         HashMap<Character,Integer>map= new HashMap<>();
         map.put('I',1);
         map.put('V',5);
@@ -20,4 +20,14 @@ public class romanToInteger {
         }
         return sum;
     }
+     public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        int ans = romanToInt(str);
+        System.out.println(ans);
+
+        
+
+    }
+
 }

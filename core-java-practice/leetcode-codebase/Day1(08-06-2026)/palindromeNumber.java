@@ -1,5 +1,6 @@
+import java.util.*;
 public class palindromeNumber{
-    public boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int x) {
         int duplicate = x;
         int check =0;
         while(duplicate>0){
@@ -13,5 +14,17 @@ public class palindromeNumber{
         else{
             return false;
         }
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        boolean check = isPalindrome(num);
+        if(check){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("Not Palindrome");
+        }
+
     }
 }
