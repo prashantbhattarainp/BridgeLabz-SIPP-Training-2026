@@ -1,1 +1,0 @@
-This is a Summer Immersion Internship Program Repository.
