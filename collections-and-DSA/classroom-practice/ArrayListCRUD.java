@@ -8,7 +8,6 @@ public class ArrayListCRUD {
         list.add("Mango");
         System.out.println("After Create: " + list);
 
-
         System.out.println("First Element: " + list.get(0));
         System.out.println("All Elements: " + list);
 

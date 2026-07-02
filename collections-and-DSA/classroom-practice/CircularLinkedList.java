@@ -1,23 +1,20 @@
-class Node {
+class CircularNode {
     int data;
-    Node next;
+    CircularNode next;
 
-    Node(int data) {
+    CircularNode(int data) {
         this.data = data;
     }
 }
 public class CircularLinkedList {
     public static void main(String[] args) {
-
-        Node head = new Node(10);
-        Node second = new Node(20);
-        Node third = new Node(30);
-
+        CircularNode head = new CircularNode(10);
+        CircularNode second = new CircularNode(20);
+        CircularNode third = new CircularNode(30);
         head.next = second;
         second.next = third;
         third.next = head;
-
-        Node temp = head;
+        CircularNode temp = head;
         do {
             System.out.print(temp.data + " ");
             temp = temp.next;

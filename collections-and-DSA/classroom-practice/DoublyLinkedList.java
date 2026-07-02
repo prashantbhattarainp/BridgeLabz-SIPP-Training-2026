@@ -1,25 +1,20 @@
-class Node {
+class DoublyNode {
     int data;
-    Node prev, next;
-
-    Node(int data) {
+    DoublyNode prev, next;
+    DoublyNode(int data) {
         this.data = data;
     }
 }
-
 public class DoublyLinkedList {
     public static void main(String[] args) {
-
-        Node head = new Node(10);
-        Node second = new Node(20);
-        Node third = new Node(30);
-        
+        DoublyNode head = new DoublyNode(10);
+        DoublyNode second = new DoublyNode(20);
+        DoublyNode third = new DoublyNode(30);
         head.next = second;
         second.prev = head;
         second.next = third;
         third.prev = second;
-
-        Node temp = head;
+        DoublyNode temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
