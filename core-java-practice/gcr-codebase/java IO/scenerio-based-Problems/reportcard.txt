@@ -1,0 +1,13 @@
+REPORT CARD
+Name: Rahul
+Marks: 78, 85, 90
+Average: 84.33
+
+Name: Priya
+Marks: 88, 92, 80
+Average: 86.67
+
+Name: Aman
+Marks: 70, 75, 68
+Average: 71.00
+
